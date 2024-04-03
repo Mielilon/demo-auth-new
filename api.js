@@ -2,9 +2,14 @@ const todosURL = "https://wedev-api.sky.pro/api/v2/todos";
 const userURL = "https://wedev-api.sky.pro/api/user/login";
 
 export let token;
+export let userName;
 
 export const setToken = (newToken) => {
   token = newToken;
+};
+
+export const setUserName = (newUserName) => {
+  userName = newUserName;
 };
 
 export function getTodos() {

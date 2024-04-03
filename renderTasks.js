@@ -1,6 +1,4 @@
-import { deleteTodo, postTodo } from "./api.js";
-
-const listElement = document.getElementById("list");
+import { deleteTodo, postTodo, userName } from "./api.js";
 
 export const renderTasks = ({ tasks, fetchAndRenderTasks }) => {
   const appElement = document.getElementById("app");
@@ -21,6 +19,7 @@ export const renderTasks = ({ tasks, fetchAndRenderTasks }) => {
     <h1>Список задач</h1>
     <ul class="tasks" id="list">${tasksHtml}</ul>
     <br />
+    <p>Пользователь: ${userName}</p>
     <div class="form">
       <h3 class="form-title">Форма добавления</h3>
       <div class="form-row">
